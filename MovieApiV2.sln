@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApiV2", "MovieApiV2.csproj", "{A5421C2D-3069-41CE-87F5-B5C55D66DBDC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApiV", "..\MovieApiV\MovieApiV.csproj", "{F312B8D4-C35F-4A50-A78F-A7997CE3617F}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SP", "..\SP\SP.sqlproj", "{BB0482D2-B068-456C-A46C-60E9C038CC6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,16 @@ Global
 		{A5421C2D-3069-41CE-87F5-B5C55D66DBDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5421C2D-3069-41CE-87F5-B5C55D66DBDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5421C2D-3069-41CE-87F5-B5C55D66DBDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F312B8D4-C35F-4A50-A78F-A7997CE3617F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F312B8D4-C35F-4A50-A78F-A7997CE3617F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F312B8D4-C35F-4A50-A78F-A7997CE3617F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F312B8D4-C35F-4A50-A78F-A7997CE3617F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB0482D2-B068-456C-A46C-60E9C038CC6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB0482D2-B068-456C-A46C-60E9C038CC6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB0482D2-B068-456C-A46C-60E9C038CC6C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BB0482D2-B068-456C-A46C-60E9C038CC6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB0482D2-B068-456C-A46C-60E9C038CC6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB0482D2-B068-456C-A46C-60E9C038CC6C}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

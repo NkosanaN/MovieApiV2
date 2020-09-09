@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using MovieApiV2.Controllers;
 
 namespace MovieApiV2
 {
@@ -26,6 +27,10 @@ namespace MovieApiV2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+
+            //services.AddDbContext<Data.MovieApiContext>(options =>
+            //options.UseSqlServer(Configuration.GetConnectionString("MovieApiContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
