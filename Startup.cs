@@ -10,6 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using MovieApiV;
+using MovieApiV.Model;
+using MovieApiV.Services;
 using MovieApiV2.Controllers;
 
 namespace MovieApiV2
@@ -27,10 +30,11 @@ namespace MovieApiV2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-
-
-            //services.AddDbContext<Data.MovieApiContext>(options =>
-            //options.UseSqlServer(Configuration.GetConnectionString("MovieApiContext")));
+           
+            IConfigurationSection sec = Configuration.GetSection("DatabaseName");
+            services.Configure<StartupModel>(sec);
+            services.AddTransient<DataHandler, DataHandler>();
+            services.AddSingleton<Utils, Utils>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,11 +47,19 @@ namespace MovieApiV2
             else
             {
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }
+                //app.UseHsts();
 
-            app.UseHttpsRedirection();
-            app.UseMvc();
+                app.UseExceptionHandler("/Home/Values");
+            }
+            app.UseStaticFiles();
+            app.UseRouting();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Movie}/{action=Get}/{id?}");
+            });
+
         }
     }
 }

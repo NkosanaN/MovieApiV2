@@ -31,15 +31,21 @@ namespace MovieApiV2.Controllers
 
         // GET api/<MovieController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<ActionResult<IEnumerable<Movie>>> MovieGetSingle(int id)
         {
-            return "value";
+            var model = await dataHandler.MovieListGet();
+            return Ok(model.FirstOrDefault().Id == id);
         }
 
         // POST api/<MovieController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<string> Post(Movie mode)
         {
+            string s = "fail creating new movie";
+
+            if (dataHandler.AddMovie(mode))
+                return s = "Created new movie";
+            return s;
         }
 
         // PUT api/<MovieController>/5
@@ -50,8 +56,13 @@ namespace MovieApiV2.Controllers
 
         // DELETE api/<MovieController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<string> Delete(int id)
         {
+            string s = "fail delete movie";
+            if (dataHandler.DeleteMovie(id))
+                return s = "remove movie";
+
+            return s;
         }
     }
 }
