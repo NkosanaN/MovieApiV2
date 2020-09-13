@@ -13,5 +13,9 @@ namespace MovieApiV.Model
         public string Genre { get; set; }
 
         public DateTime ReleaseDate { get; set; }
+
+        public int Rating { get; set; }
+
+        public int checksum { get; set; }
     }
 }

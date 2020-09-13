@@ -24,7 +24,8 @@ namespace MovieApiV.Services
                 {
                     Genre = row["Genre"].ToString(),
                     ReleaseDate = (DateTime)row["ReleaseDate"],
-                    Title = row["Genre"].ToString()
+                    Title = row["Genre"].ToString(),
+                    
                 });
             }
             return list;
@@ -46,6 +47,25 @@ namespace MovieApiV.Services
                 ReleaseDate = (DateTime)row["ReleaseDate"],
                 Title = row["Genre"].ToString()
             };
+        }
+
+        public async Task<List<Movie>> GetRatings()
+        {
+            var sql = "your sql";
+
+            var dt = Util.Select(sql);
+            var list = new List<Movie>();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                list.Add(new Movie
+                {
+                    Rating = (int)row["Rating"],
+                    checksum = (int)row["checksum"],
+                    
+                });
+            }
+            return list;
         }
         public bool AddMovie(Movie data)
         {
