@@ -25,8 +25,9 @@ namespace MovieApiV2.Controllers
         //[HttpGet]
         public async Task<ActionResult<IEnumerable<Movie>>> MovieListGet()
         {
-
-            return Ok(await dataHandler.MovieListGet());
+            var p = await dataHandler.MovieListGet();
+            p = p.Where(p=>p.)
+            return Ok(p);
         }
 
         // GET api/<MovieController>/5
@@ -49,7 +50,7 @@ namespace MovieApiV2.Controllers
         }
 
         // PUT api/<MovieController>/5
-        [HttpPut("{id}")]
+        [HttpPut("{id}")]                                                                                                                                                                                                                                                                                                                                                                                                                                            
         public void Put(int id, [FromBody] string value)
         {
         }
