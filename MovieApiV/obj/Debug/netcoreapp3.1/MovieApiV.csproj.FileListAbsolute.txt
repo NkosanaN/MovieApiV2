@@ -1,8 +1,0 @@
-C:\Users\Nkosana\source\repos\MovieApiV\bin\Debug\netcoreapp3.1\MovieApiV.deps.json
-C:\Users\Nkosana\source\repos\MovieApiV\bin\Debug\netcoreapp3.1\MovieApiV.dll
-C:\Users\Nkosana\source\repos\MovieApiV\bin\Debug\netcoreapp3.1\MovieApiV.pdb
-C:\Users\Nkosana\source\repos\MovieApiV\obj\Debug\netcoreapp3.1\MovieApiV.AssemblyInfoInputs.cache
-C:\Users\Nkosana\source\repos\MovieApiV\obj\Debug\netcoreapp3.1\MovieApiV.AssemblyInfo.cs
-C:\Users\Nkosana\source\repos\MovieApiV\obj\Debug\netcoreapp3.1\MovieApiV.csproj.CoreCompileInputs.cache
-C:\Users\Nkosana\source\repos\MovieApiV\obj\Debug\netcoreapp3.1\MovieApiV.dll
-C:\Users\Nkosana\source\repos\MovieApiV\obj\Debug\netcoreapp3.1\MovieApiV.pdb
