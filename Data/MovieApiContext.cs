@@ -17,3 +17,4 @@ namespace MovieApiV2.Data
         public DbSet<Movie> Movie { get; set; }
     }
 }
+ 
