@@ -6,4 +6,3 @@ C:\Users\Nkosana\source\repos\MovieApiV\obj\Debug\netcoreapp3.1\MovieApiV.Assemb
 C:\Users\Nkosana\source\repos\MovieApiV\obj\Debug\netcoreapp3.1\MovieApiV.csproj.CoreCompileInputs.cache
 C:\Users\Nkosana\source\repos\MovieApiV\obj\Debug\netcoreapp3.1\MovieApiV.dll
 C:\Users\Nkosana\source\repos\MovieApiV\obj\Debug\netcoreapp3.1\MovieApiV.pdb
-C:\Users\Nkosana\source\repos\MovieApiV\obj\Debug\netcoreapp3.1\MovieApiV.csprojAssemblyReference.cache
